@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% extends 'base.html' %} 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Management App</title>
+  </head>
+  <body>
+    {% block content %}
+    <div style="padding: 10%;" class="row">
+      <!-- Director Card -->
+      <div class="card col-md-3" style="min-height: 50%;">
+        <!-- Card image -->
+        <img
+          class="card-img-top m-2"
+          src="../../img/img/director.jpg"
+          alt="Card image cap"
+          style="max-width: 80px;"
+        />
+        <!-- Card content -->
+        <div class="card-body">
+          <!-- Title -->
+          <h4 class="card-title"><a>Directors</a></h4>
+          <!-- Text -->
+          <p class="card-text">
+            Here is the list of the directors.
+          </p>
+          <!-- Button -->
+          <a href="../directorlist" class="btn btn-dark m-4">Access</a>
+        </div>
+      </div>
+      <!-- Card -->
+      <!-- Card -->
+      <div class="card col-md-3" style="min-height: 50%;">
+        <!-- Card image -->
+        <img
+          class="card-img-top m-2"
+          src="../../img/img/department.png"
+          alt="Card image cap"
+          style="max-width: 80px;"
+        />
+
+        <!-- Card content -->
+        <div class="card-body">
+          <!-- Title -->
+          <h4 class="card-title"><a>Departments</a></h4>
+          <!-- Text -->
+          <p class="card-text">
+            Here is the list of the departments.
+          </p>
+          <!-- Button -->
+          <a href="../departmentlist" class="btn btn-dark m-4" style="position: absolute; bottom: 10px;">Access</a>
+        </div>
+      </div>
+      <!-- Card -->
+      <!-- Card -->
+      <div class="card col-md-3" style="min-height: 50%;">
+        <!-- Card image -->
+        <img
+          class="card-img-top m-2"
+          src="../../img/img/doctor.png"
+          alt="Card image cap"
+          style="max-width: 80px;"
+        />
+
+        <!-- Card content -->
+        <div class="card-body">
+          <!-- Title -->
+          <h4 class="card-title"><a>Doctors</a></h4>
+          <!-- Text -->
+          <p class="card-text">
+            Here is the list of the doctors.
+          </p>
+          <!-- Button -->
+          <a href="../doctorlist" class="btn btn-dark m-4" style="position: absolute; bottom: 10px;">Access</a>
+        </div>
+      </div>
+      <!-- Card -->
+      <!-- Card -->
+      <div class="card col-md-3" style="min-height: 50%;">
+        <!-- Card image -->
+        <img
+          class="card-img-top m-2"
+          src="../../img/img/patient.png"
+          alt="Card image cap"
+          style="max-width: 80px;"
+        />
+
+        <!-- Card content -->
+        <div class="card-body">
+          <!-- Title -->
+          <h4 class="card-title"><a>Patients</a></h4>
+          <!-- Text -->
+          <p class="card-text">
+            Here is the list of the patients.
+          </p>
+          <!-- Button -->
+          <a href="../patientlist" class="btn btn-dark m-4" style="position: absolute; bottom: 10px;">Access</a>
+        </div>
+      </div>
+      <!-- Card -->
+    </div>
+    {% endblock %}
+  </body>
+</html>

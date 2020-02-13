@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends 'base.html' %} 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/edit director</title>
+</head>
+<body>
+    {% block content %}
+    <div style="padding: 20px;">
+        <form class="form_control" action="" method="post">
+            {% csrf_token %}
+            <div style="max-width: 50%;">
+                {{ form.dni.label }}
+                {{ form.dni }}
+            </div>
+            <div style="max-width: 50%;">
+                {{ form.name.label }}
+                {{ form.name }}
+            </div>
+            <div style="max-width: 50%;">
+                {{ form.last_name.label }}
+                {{ form.last_name }}
+            </div>
+            <input class="btn btn-rounded btn-success m-2" type="submit" value="Submit">
+        </form>
+    </div>
+    {% endblock %}
+</body>
+</html>
